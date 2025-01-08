@@ -16,4 +16,4 @@ Funcionalidade: Receber o cupom da qazando
     @gerar-falha
     Cenário: Teste com falha
         Dado que eu tenho um cupom gerado
-        Quando eu falho
+        Quando eu falho 1234
