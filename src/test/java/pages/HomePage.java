@@ -5,8 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import runner.RunCucumberTest;
+import support.Utils;
 
-public class HomePage {
+public class HomePage extends Utils {
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
@@ -14,6 +15,7 @@ public class HomePage {
 
     public void acessarAplicacao() {
         driver.get("http://qazando.com.br/curso.html");
+        esperarEelementoEstarPresente((By.id("btn-ver-cursos"), 10);
         Assert.assertEquals( "", true, driver.findElement(By.id("btn-ver-cursos")).isDisplayed());
     }
 
